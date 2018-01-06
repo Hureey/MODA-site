@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,900");
+
+
+/* LU GREY: #B2BABB */
+/* LU RED: #B80106 / #B31521	analogous color: #b85701 */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* Take width of box and add on padding */	
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'Lato';
+	min-height: 100%;
+	/* position: relative; */
+}
+
+p, figcaption {
+	padding-right: 50px;
+}
+
+a {
+	text-decoration: none;
+	color: #B31521;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #e11a29;
+}
+
+h1 {
+	color: #B31521;
+}
+
+/* p,li {
+	font-size: 1.0em;
+} */
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+figcaption {
+	color: #626567;
+	font-size: 0.8em;
+	padding-bottom: 15px;
+	font-style: italic;
+}
+
+div#header {
+	width: 100%;
+	height: 145px;
+	background: #fff;
+	margin: 0 auto;
+}
+
+div#topbar1 {
+	padding-right: 15px;
+	padding-top: 10px;
+	height: 25px;
+	background: #fff;
+	color: #000;
+	font-size: 0.8em;
+	text-align: right;
+	
+}
+
+div#logobar {
+	padding-left: 15px;
+	height: 70px;
+	background: #fff;
+}
+
+.logo a {
+	font-size: 1.7em;
+	color: #000;
+	padding-left: 50px;
+}
+
+.logo img {
+	display: block;
+	margin: 0 auto;
+	width: 180px;
+	float: left;
+}
+
+div#navbar2 {
+	width: 100%;
+	height: 50px;
+	background: #B31521;
+	color: #fff;
+}
+
+ul#nav2 {
+	margin: 0;
+	padding: 0;
+	padding-right: 20%;
+	list-style-type: none;
+}
+
+div#navbar2 li a#title { 		/* ? Unnecessary - just a#title? */
+	display: block;
+ 	padding: 10px 15px;
+	font-size: 1.5em;
+	float: left;
+	color: #fff;
+}
+
+/* ul#nav2 li {
+	float: right;
+} */
+
+ul#nav2 li a.right {
+	display: block; 
+	float: right;
+	/* Displaying the links as block elements makes the whole link area 
+	clickable (not just the text), and it allows us to specify the width 
+	(and padding, margin, height, etc. if you want) */
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.1em;
+	padding: 14px 40px 15px;
+	color: #fff;
+}
+
+ul#nav2 li a.right:hover {
+	background-color: #e11a29;
+}
+
+#container {
+/* 	position: absolute;
+	width: 100%;
+	margin: 0 auto;  
+	padding: 0;
+	height: 100%;
+	margin-bottom: 80px; */
+	min-height: 100%;
+}
+
+#sidebarTopbar {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 10px;
+	width: 240px;
+	height: 30px;
+	background-color: #B2BABB;
+	float: left;
+}
+
+.sidebar {
+	width: 250px; /* 30% */
+	height: 100%;
+	background-color: #fff;
+	float: left;
+}
+
+.content {
+	width: auto;
+	margin-left: 250px;
+	height: 100%;
+	background-color: #fff;
+	padding-top: 15px;
+	padding-left: 20px;
+}
+
+.positionImage {
+	display: block;
+ 	margin-left: 0;
+	margin-right: auto;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	padding-right: 30px;
+} 
+
+.sidebarItem{
+    float:left;
+    display:block;
+    width:100%;
+    box-sizing: border-box;
+    font-family:'Open-sans',Arial,sans-serif;
+}
+.sidebarItemHeading{
+    cursor:pointer;
+    margin:0px 0px 10px 0px;
+    padding:10px;
+    background:#2980b9;
+    color:#fff;
+    width:100%;
+    -webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+        box-sizing: border-box;
+}
+.close .sidebarItemContent{
+    height:0px;
+    transition:height 1s ease-out;
+    -webkit-transform: scaleY(0);
+	-o-transform: scaleY(0);
+	-ms-transform: scaleY(0);
+	transform: scaleY(0);
+    float:left;
+    display:block;
+    
+    
+}
+.open .sidebarItemContent{
+        padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    display:block;
+    -webkit-transform: scaleY(1);
+	-o-transform: scaleY(1);
+	-ms-transform: scaleY(1);
+	transform: scaleY(1);
+    -webkit-transform-origin: top;
+	-o-transform-origin: top;
+	-ms-transform-origin: top;
+	transform-origin: top;
+
+	-webkit-transition: -webkit-transform 0.4s ease-out;
+	-o-transition: -o-transform 0.4s ease;
+	-ms-transition: -ms-transform 0.4s ease;
+	transition: transform 0.4s ease;
+        box-sizing: border-box;
+}
+
+.open .sidebarItemHeading{
+    margin:0px;
+        -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #bdc3c7;
+    color: #7f8c8d;
+}
+
+
