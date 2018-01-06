@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>MODA Toolbox | Lancaster University</title>
+		<link href="styles/style.css" rel="stylesheet" type="text/css">
+		<link href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<script type="text/javascript" async 
+			src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+		</script>		
+	</head>
+
+	<body>
+		
+		<div id="header">
+			<div id="topbar1"><a href="#">Back to Nonlinear & Biomedical</a></div>
+			<div id="logobar">
+				<div id="logobar-image">
+					<a href="http://www.lancaster.ac.uk/">
+						<img class="logo" src="images\LU-logo.png" alt="Lancaster University emblem: a coat of arms" >	
+					</a>
+				</div>
+				<div id="logobar-text">
+					<a href="http://www.lancaster.ac.uk/physics/" style="font-size: 1em; color:#a5a5a5">
+						Department of Physics
+					</a>
+					<br>
+					<a href="http://www.lancaster.ac.uk/physics/research/nonlinear-and-biomedical-physics/" style="font-size: 2em; color: #000; font-weight:bold">
+						Nonlinear and Biomedical Physics
+					</a>
+				</div>
+			</div>
+			<div id="navbar2">		
+				<ul id="nav2">
+					<li><a id="title" href="index.html">Multiscale Oscillatory Dynamics Analysis | MODA</a></li>
+					<li><a class="right" href="feedback.html">Feedback</a></li>				
+					<li><a class="right" href="download.html">Download</a></li>
+					<li><a class="right" href="about.html">About</a></li>
+					
+				</ul> 
+			</div>
+		</div>
+					
+		<div id="container">
+			<div class="sidebar-back"></div>
+			<div class="sidebar">
+			
+				<nav class="nav" role="navigation">
+					<ul class="navList">
+						<li><a href="what-is-moda.html">What is MODA?</a></li>
+						
+						<li>
+							<input type="checkbox" id="group-2" hidden>
+							<label for="group-2">Getting Started</label>
+							
+							<ul class="group-list">
+								<li><a href="system-and-software-requirements.html">Before you begin</a></li>
+								<li><a href="basic-features.html">Basic features</a></li>								
+								<li><a href="performing-analysis.html">Performing analysis</a></li>								
+							</ul>
+						</li>
+						
+						<li>
+							<input type="checkbox" id="group-3" hidden>
+							<label for="group-3">Time-Frequency Domain</label>
+							
+							<ul class="group-list">
+								<li><a href="windowed-fourier-transform.html">Windowed Fourier transform</a>
+								<li><a href="wavelet-transform.html">Wavelet transform</a></li>
+								<li><a href="filtering.html">Filtering</a></li>
+							</ul>
+						</li>	
+							
+						<li>
+							<input type="checkbox" id="group-4" hidden>
+							<label for="group-4"></span>Coherence</label>
+							
+							<ul class="group-list">
+								<li><a href="wavelet-phase-coherence.html">Wavelet Phase coherence</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<input type="checkbox" id="group-5" hidden>
+							<label for="group-5"></span>Coupling</label>
+							
+							<ul class="group-list">
+								<li><a href="wavelet-bispectrum.html">Wavelet Bispectrum</a></li>
+								<li><a href="dynamical-bayesian-inference.html">Dynamical Bayesian Inference</a></li>
+							</ul>
+						</li>
+						<li><a href="research.html">Research</a></li>
+						<li><a href="further-help.html">Further Help</a></li>
+					</ul>
+				</nav>	
+			</div>
+		<div class="content-surround">	
+			<div class="content"> 
+			<h1>About</h1>
+					<p>
+					{{Motivation for building toolbox, including feature comparison with other available wavelet toolboxes. Acknowledgements}}
+					<br><br>
+					{'The Multiscale Oscillatory Dynamics Analysis (MODA) Toolbox is being developed to help people study the properties of nonlinear, non-autonomous and time-varying dynamical systems.' Providing software and supporting documentation to encourage exploration. Ubiquity in nature, “mission statement”. 
+					'Realising [/building] the toolbox is the collaborative effort of members from the Lancaster University Nonlinear and Biomedical Physics group. The group leader, Aneta Stefanovska, envisaged the MODA Toolbox and supervised design 
+					and development alongside Research Associate, Gemma Lancaster. The programs used in the package have been written by past and present group members.' Links to personal pages of those involved in toolbox development, if agreed? Explicitly list primary authors of scripts utilised in each module. 				
+					'Major testing and feedback was performed by undergraduate research assistants Natasha [second name] and Lucy Thomas, [during their own analysis on [data that they analysed]' - mention of their result summary if provided as exemplar of toolbox utility for those fairly new to MATLAB and/or programming]. This online manual was developed by Gemma Lancaster, Sasha Proctor and Lucy Thomas, and is
+					further curated by... 
+					Link or mention of selection of LU research articles pertaining utilising the time series analysis techniques presented in the toolbox, and their major findings.  
+					'The Wavelet Toolbox GUI was built with <a href="https://uk.mathworks.com/discovery/matlab-gui.html">GUIDE</a> (MATLAB's GUI Development Environment) primarily by Guru Vamsi (you can find his work on Git {where he hosts the modules of the toolbox?} <a href="#">here</a>). Further testing and development of the GUI was performed by Gemma Lancaster and Lucy [second name].'
+					<br><br>
+					'It’s been our aim to embed these analysis tools and visualisations into a user-friendly and responsive graphical interface.' For use by those with few [/less developed] computer skills. Encourage [/foster] a [curiosity/interest] in time series analysis, particularly to study non-autonomous, time-varying dynamical systems.
+					</p>
+					<h2 id="feature-breakdown-and-comparisons">What's different about MODA?</h2>
+					<p>
+					{{Discussion of differences between wavelet toolboxes available. MATLAB's is an optional add-on that you have to purchase and requires programmatic skills (not as interactive), so it isn't as friendly for those with no exposure to programming}
+					</p>
+					<p>We can only improve with your feedback, so please <a href="feedback.html">let us know what you think</a> of the toolbox and its documentation.</p>
+					<p> {{Request acknowledgement of toolbox use in any published content.}} </p>
+			<div class="section-separator"></div>
+			</div> 
+		</div>
+		<div class="footer"></div>
+	</body>
+	
+</html>

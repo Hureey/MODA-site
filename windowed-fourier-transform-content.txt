@@ -1,0 +1,28 @@
+--------------------------
+windowed Fourier Transform
+--------------------------
+
+- - - - - - -
+Introduction
+- - - - - - -
+{Core principles of Fourier transform, 
+In the 1800s, the French mathematician Joseph Fourier formulated
+For an excellent, intuitive guide to the Fourier transform, [check out]
+The stability of oscillatory systems may in fact rest upon this time
+variabiliy
+
+- - - - - - - - - - - - - - - - - - - - - - - - - -
+Calculating the Windowed Fourier Transform in MODA
+- - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+				<ul class="breadcrumb">
+					<li><a href="time-frequency-domain.html">Time-Frequency Domain</a></li>
+					<li>Windowed Fourier Transform</li>
+				</ul>
+				<h1>Windowed Fourier Transform</h1>
+					<h2>Guide Overview</h2>
+						{{Sweeping overview: WFT function and motivation for use; primary concepts covered in background section; leading on to MODA walkthrough where guided through
+						examples; equip you with deeper insight into this function - exploring the advanced options}}.
+					<div class="section-separator"></div>
+					<a class="next-button" href="windowed-fourier-transform-background.html">Next</a>

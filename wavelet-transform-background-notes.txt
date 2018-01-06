@@ -1,0 +1,5 @@
+%%%%% Wavelet Transform | Background %%%%%
+
+
+Why use a Gaussian function in particular to shape our window? 
+{Explore what the [Morlet] wavelet looks like in time and frequency domains. Build up geometrical form from algebraic expression in steps.}

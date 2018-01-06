@@ -1,0 +1,28 @@
+<ul class="breadcrumb">
+					<li><a href="getting-started.html">Getting Started</a></li>
+					<li><a href="basic-features.html">Basic Features</a></li>
+					<li>[Preliminaries]</li>
+				</ul>
+				<h1>Basic Features</h1>
+				
+				<h2>Preliminaries</h2>
+						<!-- {Outline content of downloaded file - composition of 5 {modules}. Direct to run .m file: analysis window.} -->
+						<h3>[Running modules]</h3>
+						<p>
+						The Wavelet Toolbox is a {software package} consisting of five <a href="#" class="tooltip">modules<span class="tool-tip-text">Explain module</span></a>, each offering a different form of wavelet-based [time series] analysis.
+						{Describe how to run toolbox modules, run-down of contents of toolbox folders. Introduce the Time-Frequency Analysis module as what will be used to run through the generic features of modules. Very brief summary of analysis structure: loading data (with some specification requirements of file format, length, size etc), choosing parameters, pre-processing, calculations, viewing 
+						and manipulating figure results, saving data and figures (introducing .fig format). Include Note if require user to use a particular delimiter (or offer option for user to specify which delimiter used). Tool-tip for "delimiter".}}
+						</p>
+						
+						<p>{{Information on data formats, orientation, size and sampling frequency. MATLAB also supports text (TXT), spreadsheet (XLS) and other formats. If toolbox only going to support MAT and CSV, will include recommendation for user to convert whatever format their data is in to one of these. 
+						Provide information (links) for user to convert their data into CSV or MAT form. Advantages/disadvantages (if any) of either format. Data types: floating point, int, string. Awareness of data orientation: row-wise or column-wise.}}</p>						
+						<p>The Wavelet Toolbox is currently equipped to operate with data files of type CSV (Comma-Separated Value) or MAT (MATLAB formatted). 
+						The data types compatible for import and saving in the Wavelet Toolbox are limited to those supported by MATLAB.</p> 						
+						<p>CSV files are very common for data exchange and can be created in applications such as a <a href="#" class="tooltip">text editor<span class="tool-tip-text">A text editor is a program used to edit plain text files. Those provided as standard with operating systems include Notepad for Windows and TextEdit for Mac.</span></a>, Microsoft Excel and Google Docs. 
+						</p>
+						<p>
+						MAT files are the native data format for MATLAB. {{Matrix formatted, saved in MATLAB workspace (variables). When import CSV, toolbox converts to MAT to operate on data.}} </p>
+						</p>			
+			
+				<a class="previous-button" href="basic-features.html">Previous</a>
+				<a class="next-button" href="basic-features-analysis-window.html">Next</a>

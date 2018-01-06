@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>MODA Toolbox | Lancaster University</title>
+		<link href="styles/style.css" rel="stylesheet" type="text/css">
+		<link href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<script type="text/javascript" async 
+			src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML">
+		</script>		
+	</head>
+
+	<body>
+		
+		<div id="header">
+			<div id="topbar1"><a href="#">Back to Nonlinear & Biomedical</a></div>
+			<div id="logobar">
+				<div id="logobar-image">
+					<a href="http://www.lancaster.ac.uk/">
+						<img class="logo" src="images\LU-logo.png" alt="Lancaster University emblem: a coat of arms" >	
+					</a>
+				</div>
+				<div id="logobar-text">
+					<a href="http://www.lancaster.ac.uk/physics/" style="font-size: 1em; color:#a5a5a5">
+						Department of Physics
+					</a>
+					<br>
+					<a href="http://www.lancaster.ac.uk/physics/research/nonlinear-and-biomedical-physics/" style="font-size: 2em; color: #000; font-weight:bold">
+						Nonlinear and Biomedical Physics
+					</a>
+				</div>
+			</div>
+			<div id="navbar2">		
+				<ul id="nav2">
+					<li><a id="title" href="index.html">Multiscale Oscillatory Dynamics Analysis | MODA</a></li>
+					<li><a class="right" href="feedback.html">Feedback</a></li>				
+					<li><a class="right" href="download.html">Download</a></li>
+					<li><a class="right" href="about.html">About</a></li>
+					
+				</ul> 
+			</div>
+		</div>
+					
+		<div id="container">
+			<div class="sidebar-back"></div>
+			<div class="sidebar">
+			
+				<nav class="nav" role="navigation">
+					<ul class="navList">
+						<li><a href="what-is-moda.html">What is MODA?</a></li>
+						
+						<li>
+							<input type="checkbox" id="group-2" hidden>
+							<label for="group-2">Getting Started</label>
+							
+							<ul class="group-list">
+								<li><a href="before-you-begin-system-requirements.html">Before you begin</a></li>
+								<li><a href="basic-features-preliminaries.html">Basic features</a></li>								
+								<li><a href="performing-analysis-loading-and-analysing-data.html">Performing analysis</a></li>								
+							</ul>
+						</li>
+						
+						<li>
+							<input type="checkbox" id="group-3" hidden>
+							<label for="group-3">Time-Frequency Domain</label>
+							
+							<ul class="group-list">
+								<li><a href="windowed-fourier-transform-intro.html">Windowed Fourier transform</a>
+								<li><a href="wavelet-transform-intro.html">Wavelet transform</a></li>
+								<li><a href="filtering-intro.html">Filtering</a></li>
+							</ul>
+						</li>	
+							
+						<li>
+							<input type="checkbox" id="group-4" hidden>
+							<label for="group-4"></span>Coherence</label>
+							
+							<ul class="group-list">
+								<li><a href="wavelet-phase-coherence-intro.html">Wavelet Phase coherence</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<input type="checkbox" id="group-5" hidden>
+							<label for="group-5"></span>Coupling</label>
+							
+							<ul class="group-list">
+								<li><a href="wavelet-bispectrum-intro.html">Wavelet Bispectrum</a></li>
+								<li><a href="dynamical-bayesian-inference-intro.html">Dynamical Bayesian Inference</a></li>
+							</ul>
+						</li>
+						<li><a href="research.html">Research</a></li>
+						<li><a href="further-help.html">Further Help</a></li>
+					</ul>
+				</nav>	
+			</div>
+		<div class="content-surround">	
+			<div class="content"> 
+				<ul class="breadcrumb">
+					<li><a href="getting-started.html">Getting Started</a></li>
+					<li><a href="performing-analysis.html">Performing Analysis</a></li>
+					<li>Saving Results</li>
+				</ul>
+				<h1>Performing Analysis</h1>
+				
+				<h2>Saving Results</h2>
+							<p>{{Description of saving numerical results, data formats (what delimiter used for .csv?). Saving graphical results: anatomy of result figure window; interactive customisation of graph with Property Editor, 
+							Plot Browser and Figure Palette; visual data exploration. Adding superscripts, subscripts, Greek letters. Figure formats (.eps, .bmp, .jpg, vector graphics), benefits to each (storage requirements, editable).
+							Note about accessibility for colorblind (choosing colormap - issues with Jet?)}} 
+							</p>
+							<p>
+							<figure style="margin-bottom: 10px;">
+								<img class="positionImage" id="fig-toolbar" src="images/toolbar2.png" alt="toolbar-desc" style="width:35%; padding-top:10px"></img>
+								<figcaption>Fig. 4: Figure [editor] toolbar. <span style="font-weight: bold">A</span> Colorbar</figcaption>
+							</figure>	
+							<div id="analysis-steps">
+								<table class="table-list-steps">
+									<tr>
+										<td class="list-num">1</td>
+										<td class="list-step"><span style="font-weight: bold; color: #b85701"></span>
+										</td>
+									</tr>
+									<tr>
+										<td class="list-num">2</td>
+										<td class="list-step"><span style="font-weight: bold; color:#b85701"></span> 
+										</td>
+									</tr>
+									<tr>
+										<td class="list-num">3</td>
+										<td class="list-step"></td>
+									</tr>
+								</table>
+								<span style="font-size: 0.8em; padding-bottom: 15px; font-style: italic; color: #626567">An asterisk (*) is used to denote optional steps. </span>
+							</div>
+							</p>
+							<table>
+								<tr>
+									<td><span style="font-weight:bold">A</span></td>
+									<td class="table-toolbar-tool">Colorbar</td>
+									<td class="table-toolbar-desc">Displays the mapping of data values to the current colormap of the selected axes</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td class="row-toolbar-use">To use, select the axes to add a colorbar to, then select the colorbar icon. The colorbar appears vertically to the right of the axes. </td>
+								</tr>
+							</table>
+							<p>
+							{To save the graphical versions of your results, single-click the axes and in the menu bar select <span style="font-weight: bold">Plot</span> > <span style="font-weight: bold"></span>... This will open a separate figure window which you can save by selecting 
+							<span style="font-weight: bold">Save</span> > <span style="font-weight: bold"></span>...}
+							</p>			
+						
+							<h3>[Interpretation (Surrogate Testing)]</h3>
+							<p>{{Preliminary discussion of result interpretation, including surrogate testing.}}</p>
+							
+							<h3>Where to go next?</h3>
+							<p>{{Direct user to begin with Time-Frequency Analysis module (as most generic calculations performed)}}</p>
+							<p>
+							To start using a module, use the side navigation menu to select an analysis method under the... We recommend beginning [your [signal] analysis] with the <a href="#">Time-Frequency Analysis</a> module, and running through the examples provided. This will provide you with insight into 
+							[representing] time-variable dynamical behaviour. The walkthroughs will direct you through the procedure unique to each module as you load your data, choose parameters, begin calculations and interpret your results...} 
+							</p> 
+				
+				<div class="section-separator"></div>
+				<a class="previous-button" href="performing-analysis-loading-and-analysing-data.html">Previous</a>
+			</div> 
+		</div>
+		<div class="footer"></div>
+	</body>
+	
+</html>

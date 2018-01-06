@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>MODA Toolbox | Lancaster University</title>
+		<link href="styles/style.css" rel="stylesheet" type="text/css">
+		<link href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<script type="text/javascript" async 
+			src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+		</script>		
+	</head>
+
+	<body>
+		
+		<div id="header">
+			<div id="topbar1"><a href="#">Back to Nonlinear & Biomedical</a></div>
+			<div id="logobar">
+				<div id="logobar-image">
+					<a href="http://www.lancaster.ac.uk/">
+						<img class="logo" src="images\LU-logo.png" alt="Lancaster University emblem: a coat of arms" >	
+					</a>
+				</div>
+				<div id="logobar-text">
+					<a href="http://www.lancaster.ac.uk/physics/" style="font-size: 1em; color:#a5a5a5">
+						Department of Physics
+					</a>
+					<br>
+					<a href="http://www.lancaster.ac.uk/physics/research/nonlinear-and-biomedical-physics/" style="font-size: 2em; color: #000; font-weight:bold">
+						Nonlinear and Biomedical Physics
+					</a>
+				</div>
+			</div>
+			<div id="navbar2">		
+				<ul id="nav2">
+					<li><a id="title" href="index.html">Multiscale Oscillatory Dynamics Analysis | MODA</a></li>
+					<li><a class="right" href="feedback.html">Feedback</a></li>				
+					<li><a class="right" href="download.html">Download</a></li>
+					<li><a class="right" href="about.html">About</a></li>
+					
+				</ul> 
+			</div>
+		</div>
+					
+		<div id="container">
+			<div class="sidebar-back"></div>
+			<div class="sidebar">
+			
+				<nav class="nav" role="navigation">
+					<ul class="navList">
+						<li><a href="what-is-moda.html">What is MODA?</a></li>
+						
+						<li>
+							<input type="checkbox" id="group-2" hidden>
+							<label for="group-2">Getting Started</label>
+							
+							<ul class="group-list">
+								<li><a href="system-and-software-requirements.html">Before you begin</a></li>
+								<li><a href="basic-features-preliminaries.html">Basic features</a></li>								
+								<li><a href="performing-analysis-loading-and-analysing-data.html">Performing analysis</a></li>								
+							</ul>
+						</li>
+						
+						<li>
+							<input type="checkbox" id="group-3" hidden>
+							<label for="group-3">Time-Frequency Domain</label>
+							
+							<ul class="group-list">
+								<li><a href="windowed-fourier-transform.html">Windowed Fourier transform</a>
+								<li><a href="wavelet-transform.html">Wavelet transform</a></li>
+								<li><a href="filtering.html">Filtering</a></li>
+							</ul>
+						</li>	
+							
+						<li>
+							<input type="checkbox" id="group-4" hidden>
+							<label for="group-4"></span>Coherence</label>
+							
+							<ul class="group-list">
+								<li><a href="wavelet-phase-coherence.html">Wavelet Phase coherence</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<input type="checkbox" id="group-5" hidden>
+							<label for="group-5"></span>Coupling</label>
+							
+							<ul class="group-list">
+								<li><a href="wavelet-bispectrum.html">Wavelet Bispectrum</a></li>
+								<li><a href="dynamical-bayesian-inference.html">Dynamical Bayesian Inference</a></li>
+							</ul>
+						</li>
+						<li><a href="research.html">Research</a></li>
+						<li><a href="further-help.html">Further Help</a></li>
+					</ul>
+				</nav>	
+			</div>
+		<div class="content-surround">	
+			<div class="content"> 
+<ul class="breadcrumb">
+					<li><a href="getting-started.html">Getting Started</a></li>
+					<li>Before You Begin: System and Software Requirements</li>
+				</ul>
+				<h1>Before You Begin</h1>
+					<h2>System and Software Requirements</h2>
+						<p>The Wavelet Toolbox is itself freely available for download, but it is written in the proprietary programming language and numerical computing environment <a href="https://uk.mathworks.com/products/matlab.html?s_tid=hp_products_matlab">MATLAB</a>, 
+						developed by MathWorks. To run the toolbox it is required that you install MATLAB version [version] or newer on your system. This necessitates that you, your affiliated institution or [company] purchase a <a href="https://uk.mathworks.com/pricing-licensing.html?prodcode=ML">MathWorks license</a>, or alternatively
+						<a href="">enrol on a 30-day free trial</a>. </p>
+						<p> {{Brief motivation for user to purchase MATLAB, giving some background to its functionality and added capabilities outside of Lancaster Wavelet Toolbox. Popular language for signal processing and data analysis in particular, and for introductory courses in programming: user-friendly, extensive library of built-in functions, high speed {?} hosts large range of its own toolboxes.}}
+						</p>
+				
+						<p>MathWorks offer a range of software packages over various price brackets depending on the desired functionality and intended level of distribution. These include optional add-ons covering many different areas of study, from computational biology to signal processing and communications 
+						(including MathWork's own Wavelet Toolbox - see our <a href="about.html#feature-breakdown-and-comparisons">comparison of features</a> to see why we were motivated to develop our own version).
+						For your information, we have provided a break-down of the options available for purchasing MATLAB [at various intended distribution levels]:
+						</p>				
+						<p>
+						{{Provide our own recommendation for a package with respect to using the Wavelet Toolbox, and for broader prospects? depending on user type?}
+						</p>
+						<p>
+						<span style="font-weight:bold">If you are a student</span> {provide recommendation for type of package and how to proceed for student interested in own use on personal computer, and/or through institution. Direct to relevant MathWorks links.} 
+						</p>
+						<p>
+						<span style="font-weight:bold">If you are an instructor </span> {provide recommendation}} 
+						</p>
+						<p>The minimum system requirements for the latest version of MATLAB (R2017a) are shown below {{include condensed version of table from link in table caption, so user can see the requirements at a glance and doesn't have to go to separate website to view them? Should explicitly provide minimum system requirements for the version needed to run the toolbox, or 2017a?}}:</p>
+						<!-- Table https://uk.mathworks.com/support/sysreq.html-->
+						<table>
+							<caption> <span style="font-weight:bold">Table 1</span>. Adapted from: <a href="https://uk.mathworks.com/support/sysreq.html">System Requirements for MATLAB R2017a</a></caption>
+						</table>
+						<p>
+						For information on the system requirements for previous releases of MATLAB, please visit their <a href="https://uk.mathworks.com/support/sysreq/previous_releases.html"> System Requirements & Platform Availability</a> page. 
+						</p>
+						<p>
+						{Guide to link for general MATLAB documentation for installation and activation. Include our own version of instructions?}
+						</p>	
+		
+			<div class="section-separator"></div>
+			<a class="next-button" href="installation.html">Next</a>
+			</div> 
+		</div>
+		<div class="footer"></div>
+	</body>
+	
+</html>

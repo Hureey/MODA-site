@@ -1,0 +1,44 @@
+	<ul class="breadcrumb">
+					<li><a href="coherence.html">Coherence</a></li>
+					<li>Wavelet Phase Coherence</li>
+				</ul>
+					<h1>Wavelet Phase Coherence</h1>
+						<h2>Introduction</h2>
+							Coherence is defined for specific frequencies - if the changes in phase and amplitude for a certain oscillation in a time series are the same for the same
+							oscillation observed in a different time series, then the oscillations are coherent. It also possible to define amplitude coherence (only the amplitude is
+							matching) and phase coherence (only the phase is matching).
+							<br><br>
+							Synchronisation is related to coherence but is not the same. Oscillations can be coherent without direct coupling, but synchronisation is a result of
+							coupling between oscillations. There are different types of synchronisation: phase synchronisation, phase and amplitude synchronisation, Lyapunov 
+							synchronisation and also n : m locking, where there are n cycles of one oscillator for each m cycles of the other. 
+							<br><br>
+							It is possible to use methods that detect phase locking (where the phase shift between two oscillations remains constant) to observe inteactions between signals,
+							but if the phase locking is 1:1, then it is not necessary to use phase locking. Instead, the phase coherence can be used: [eq 14]
+							\[C_{\phi}(f_{k}) = \sqrt{\left\langle\cos\Delta\phi_{k, n}\right\rangle^{2} + \left\langle\sin\Delta\phi_{k, n}\right\rangle^{2}})\]
+							This gives the phase coherence at a given frequency and takes values between 0 and 1. A value of 1 means that the phase difference is the same for all time,
+							and a value of 0 means that there is no tendency for the phase difference to remain the same.
+							<br><br>
+							The phase coherence can also be defined in terms of any time-frequency representation wt with complex values. In the toolbox, the power normalised wavelet
+							transform is used, which is the same as using the phase difference definition [(eq 14)] above. [eq 15].
+							<br><br>
+							The phase coherence can be calculated for all scales s to have a plot of coherence vs. frequency. It is usually more than 0 even for two uncorrelated noise signals
+							so you need to be careful when deciding what is a significant coherence. However, even this does not give a full picture, as the lower frequency components
+							are observed for fewer cycles. The phase difference varies less when observed over fewer cycles. This results in a bias where the phase coherence between 
+							two unrelated signals increases monotonically towards lower frequencies.
+							<br><br>
+							To account for the bias towards higher coherence at lower frequencies, surrogates are used.The surrogates used here are generated times series which have a
+							ll the same properties of the original time series apart from the phase, because the phase difference is what is being tested. There are different ways to
+							calculate surrogates which you can see in Advanced Options. After the surrogates are generated, the phase coherence between surrogates is calculated. This
+							is then used as a baseline, and a coherence above this is said to be significant.
+							<br><br>
+							[show pic of surrogates subtracted/not subtracted]
+							<br><br>To track time-variability of the coherence, a sliding window is used for calculation. The window size can be scaled with frequency, so that there a
+							re the same number of cycles in every window. This removes the lower frequency bias and the need for surrogates. The windowing can cause loss of low
+							frequency coherence information. Preprocessing is often required to detrend the data, and remove the effect of high harmonics of low frequency oscillations
+							that cannot be observed.  At least 5 cycles need to be observed in order to identify coherence, which is an additional difficulty at low frequencies. The 
+							cone of influence in the continuous wavelet transform also cuts off information at lower frequencies.
+								<div class="section-separator"></div>
+				
+				<a class="previous-button" href="#">Previous</a>
+				<a class="next-button" href="wavelet-phase-coherence-background.html">Next</a>
+				<a class="next-button" href="wavelet-phase-coherence-background.html">Next</a>

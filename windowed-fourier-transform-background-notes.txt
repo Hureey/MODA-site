@@ -1,0 +1,8 @@
+%%%%% Windowed Fourier Transform | Background %%%%%
+
+% What was Fourier looking for? What was he exploring? What was his path to the transform equation?
+This is what we call <italic>time-frequency analysis</italic>: looking at how the oscillatory components of a signal change in amplitude and frequency through time {trying
+to infer what causes changes, and what effects these changes have. Multivariate data to }
+
+To see in what ways [/how] we can use these phase values [/phase information] from signals to [infer] properties of the relationship between two signals, read on to 
+learn about an important property of oscillations called <italic>coherence</italic> <link>Wavelet Phase Coherence</link>.

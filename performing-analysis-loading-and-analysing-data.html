@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>MODA Toolbox | Lancaster University</title>
+		<link href="styles/style.css" rel="stylesheet" type="text/css">
+		<link href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<script type="text/javascript" async 
+			src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML">
+		</script>		
+	</head>
+
+	<body>
+		
+		<div id="header">
+			<div id="topbar1"><a href="#">Back to Nonlinear & Biomedical</a></div>
+			<div id="logobar">
+				<div id="logobar-image">
+					<a href="http://www.lancaster.ac.uk/">
+						<img class="logo" src="images\LU-logo.png" alt="Lancaster University emblem: a coat of arms" >	
+					</a>
+				</div>
+				<div id="logobar-text">
+					<a href="http://www.lancaster.ac.uk/physics/" style="font-size: 1em; color:#a5a5a5">
+						Department of Physics
+					</a>
+					<br>
+					<a href="http://www.lancaster.ac.uk/physics/research/nonlinear-and-biomedical-physics/" style="font-size: 2em; color: #000; font-weight:bold">
+						Nonlinear and Biomedical Physics
+					</a>
+				</div>
+			</div>
+			<div id="navbar2">		
+				<ul id="nav2">
+					<li><a id="title" href="index.html">Multiscale Oscillatory Dynamics Analysis | MODA</a></li>
+					<li><a class="right" href="feedback.html">Feedback</a></li>				
+					<li><a class="right" href="download.html">Download</a></li>
+					<li><a class="right" href="about.html">About</a></li>
+					
+				</ul> 
+			</div>
+		</div>
+					
+		<div id="container">
+			<div class="sidebar-back"></div>
+			<div class="sidebar">
+			
+				<nav class="nav" role="navigation">
+					<ul class="navList">
+						<li><a href="what-is-moda.html">What is MODA?</a></li>
+						
+						<li>
+							<input type="checkbox" id="group-2" hidden>
+							<label for="group-2">Getting Started</label>
+							
+							<ul class="group-list">
+								<li><a href="before-you-begin-system-requirements.html">Before you begin</a></li>
+								<li><a href="basic-features-preliminaries.html">Basic features</a></li>								
+								<li><a href="performing-analysis-loading-and-analysing-data.html">Performing analysis</a></li>								
+							</ul>
+						</li>
+						
+						<li>
+							<input type="checkbox" id="group-3" hidden>
+							<label for="group-3">Time-Frequency Domain</label>
+							
+							<ul class="group-list">
+								<li><a href="windowed-fourier-transform-intro.html">Windowed Fourier transform</a>
+								<li><a href="wavelet-transform-intro.html">Wavelet transform</a></li>
+								<li><a href="filtering-intro.html">Filtering</a></li>
+							</ul>
+						</li>	
+							
+						<li>
+							<input type="checkbox" id="group-4" hidden>
+							<label for="group-4"></span>Coherence</label>
+							
+							<ul class="group-list">
+								<li><a href="wavelet-phase-coherence-intro.html">Wavelet Phase coherence</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<input type="checkbox" id="group-5" hidden>
+							<label for="group-5"></span>Coupling</label>
+							
+							<ul class="group-list">
+								<li><a href="wavelet-bispectrum-intro.html">Wavelet Bispectrum</a></li>
+								<li><a href="dynamical-bayesian-inference-intro.html">Dynamical Bayesian Inference</a></li>
+							</ul>
+						</li>
+						<li><a href="research.html">Research</a></li>
+						<li><a href="further-help.html">Further Help</a></li>
+					</ul>
+				</nav>	
+			</div>
+		<div class="content-surround">	
+			<div class="content"> 
+				<ul class="breadcrumb">
+					<li><a href="getting-started.html">Getting Started</a></li>
+					<li><a href="performing-analysis.html">Performing Analysis</a></li>
+					<li>Loading and Analysing Data</li>
+				</ul>
+				<h1>Performing Analysis</h1>
+				
+				<h2>Loading and Analysing Data</h2>
+							<p>{{Very brief description of basic (generic) load and analyse procedure. Brief reminder of data specifications (orientation, size, sampling frequency, single or multiple signals, uni and multivariate), and dependency on module. Outline of basic data loading and analysis/calculation procedure.}} 
+							</p>
+							<h3>Workflow</h3>
+							<p>{<span style="font-weight:bold">The generic data import and calculation workflow is outlined in the steps below:</span>}
+							</p>
+								<div id="analysis-steps">
+								<table class="table-list-steps">
+									<tr>
+										<td class="list-num">1</td>
+										<td class="list-step"><span style="font-weight: bold; color: #b85701">Load your data into the workspace:</span> in the menu bar of the Analysis Window, select <span style="font-weight:bold">Load</span>, then either <span style="font-weight:bold">Load from .csv</span> or <span style="font-weight:bold">Load from .mat</span> option, depending on your chosen data format.
+										</td>
+									</tr>
+									<tr>
+										<td class="list-num">2</td>
+										<td class="list-step"><span style="font-weight: bold; color:#b85701">Choose your graph limits:</span> 
+										<div class="note">						
+											<span style="font-weight:bold">Note:</span> If you graphically alter the graph limits (either by the zoom or pan tool), you must press the <span style="font-weight:bold">Refresh</span> button in the <span style="font-weight:bold">Graph Limits</span> panel before performing a calculation.
+										</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="list-num">3</td>
+										<td class="list-step"> </td>
+									</tr>
+									<tr>
+										<td class="list-num">4</td>
+										<td class="list-step"><span style="font-weight: bold; color:#b85701">Start your calculation:</span> {{Monitor progress in Status bar}}</td>
+									</tr>
+									<tr>
+										<td class="list-num" style="padding-bottom: 0.5em">*</td>
+										<td class="list-step"><span style="padding-bottom: 0.5em; color: #b85701;">Apply graph intervals to your plot:<span></td>
+									</tr>
+								</table>
+								<span style="font-size: 0.8em; padding-bottom: 15px; font-style: italic; color: #626567">An asterisk (*) is used to denote optional steps. </span>
+								</div>
+							<p>
+							{{Information on monitoring calculation progress. Include Tip for more detailed information/updates on the calculation progress, including percentage completion (stage break-down), watch MATLAB Command Window. Update the other .m files (coherence, surrogate calculations etc) to display similar progress information for user?}} 
+							</p>
+							<p>
+							{{Statement of there being example walkthroughs on module specific pages for each type of analysis technique. Include gifs of using the GUI in the example walkthrough for module specific pages}}
+							</p>
+				<div class="section-separator"></div>
+				<a class="previous-button" href="performing-analysis.html">Previous</a>
+				<a class="next-button" href="performing-analysis-saving-results.html">Next</a>
+			</div> 
+		</div>
+		<div class="footer"></div>
+	</body>
+	
+</html>

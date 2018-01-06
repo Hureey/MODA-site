@@ -1,0 +1,8 @@
+				<ul class="breadcrumb">
+					<li><a href="getting-started.html">Getting Started</a></li>
+					<li>Basic Features</li>
+				</ul>
+				<h1>Basic Features</h1>
+					<h2>Introduction</h2>
+				<div class="section-separator"></div>
+				<a class="next-button" href="basic-features-preliminaries.html">Next</a>

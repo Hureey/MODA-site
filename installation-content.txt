@@ -1,0 +1,17 @@
+				<ul class="breadcrumb">
+					<li><a href="getting-started.html">Getting Started</a></li>
+					<li>Before You Begin: Installation</li>
+				</ul>
+				<h1>Before You Begin</h1>
+					<h2>Installation</h2>
+						<p>	
+						{Guide to installing Wavelet Toolbox (link direct to Download page). Info on file path.}
+						</p>					
+						<h3>Introducing [/Running/Using] MATLAB</h3>
+						<p>
+						{Brief run-down of/basic anatomy of MATLAB: Command Window, Current Folder, Workspace. Very brief mention of MATLAB Editor, writing programs, workspace variables, but direct to MathWorks site for further information. Don't overwhelm, maintain low computer skill requirements to understand jist,
+						but aiming a little to intrigue user about these capabilities. Very brief mention how toolbox fits into MATLAB's interface.}						
+						</p>		
+				<div class="section-separator"></div>
+				<a class="previous-button" href="system-and-software-requirements.html">Previous</a>
+				<a class="next-button" href="basic-features-preliminaries.html">Next</a>

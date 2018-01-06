@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>MODA Toolbox | Lancaster University</title>
+		<link href="styles/style.css" rel="stylesheet" type="text/css">
+		<link href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<script type="text/javascript" async 
+			src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+		</script>		
+	</head>
+
+	<body>
+		
+		<div id="header">
+			<div id="topbar1"><a href="#">Back to Nonlinear & Biomedical</a></div>
+			<div id="logobar">
+				<div id="logobar-image">
+					<a href="http://www.lancaster.ac.uk/">
+						<img class="logo" src="images\LU-logo.png" alt="Lancaster University emblem: a coat of arms" >	
+					</a>
+				</div>
+				<div id="logobar-text">
+					<a href="http://www.lancaster.ac.uk/physics/" style="font-size: 1em; color:#a5a5a5">
+						Department of Physics
+					</a>
+					<br>
+					<a href="http://www.lancaster.ac.uk/physics/research/nonlinear-and-biomedical-physics/" style="font-size: 2em; color: #000; font-weight:bold">
+						Nonlinear and Biomedical Physics
+					</a>
+				</div>
+			</div>
+			<div id="navbar2">		
+				<ul id="nav2">
+					<li><a id="title" href="index.html">Multiscale Oscillatory Dynamics Analysis | MODA</a></li>
+					<li><a class="right" href="feedback.html">Feedback</a></li>				
+					<li><a class="right" href="download.html">Download</a></li>
+					<li><a class="right" href="about.html">About</a></li>
+					
+				</ul> 
+			</div>
+		</div>
+					
+		<div id="container">
+			<div class="sidebar-back"></div>
+			<div class="sidebar">
+			
+				<nav class="nav" role="navigation">
+					<ul class="navList">
+						<li><a href="what-is-moda.html">What is MODA?</a></li>
+						
+						<li>
+							<input type="checkbox" id="group-2" hidden>
+							<label for="group-2">Getting Started</label>
+							
+							<ul class="group-list">
+								<li><a href="system-and-software-requirements.html">Before you begin</a></li>
+								<li><a href="basic-features.html">Basic features</a></li>								
+								<li><a href="performing-analysis.html">Performing analysis</a></li>								
+							</ul>
+						</li>
+						
+						<li>
+							<input type="checkbox" id="group-3" hidden>
+							<label for="group-3">Time-Frequency Domain</label>
+							
+							<ul class="group-list">
+								<li><a href="windowed-fourier-transform.html">Windowed Fourier transform</a>
+								<li><a href="wavelet-transform.html">Wavelet transform</a></li>
+								<li><a href="filtering.html">Filtering</a></li>
+							</ul>
+						</li>	
+							
+						<li>
+							<input type="checkbox" id="group-4" hidden>
+							<label for="group-4"></span>Coherence</label>
+							
+							<ul class="group-list">
+								<li><a href="wavelet-phase-coherence.html">Wavelet Phase coherence</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<input type="checkbox" id="group-5" hidden>
+							<label for="group-5"></span>Coupling</label>
+							
+							<ul class="group-list">
+								<li><a href="wavelet-bispectrum.html">Wavelet Bispectrum</a></li>
+								<li><a href="dynamical-bayesian-inference.html">Dynamical Bayesian Inference</a></li>
+							</ul>
+						</li>
+						<li><a href="research.html">Research</a></li>
+						<li><a href="further-help.html">Further Help</a></li>
+					</ul>
+				</nav>	
+			</div>
+		<div class="content-surround">	
+			<div class="content"> 
+			<ul class="breadcrumb">
+					<li><a href="getting-started.html">Getting Started</a></li>
+					<li><a href="basic-features.html">Basic Features</a></li>
+					<li>[Preliminaries]</li>
+				</ul>
+				<h1>Basic Features</h1>
+				
+				<h2>Preliminaries</h2>
+						<!-- {Outline content of downloaded file - composition of 5 {modules}. Direct to run .m file: analysis window.} -->
+						<h3>[Running modules]</h3>
+						<p>
+						The Wavelet Toolbox is a {software package} consisting of five <a href="#" class="tooltip">modules<span class="tool-tip-text">Explain module</span></a>, each offering a different form of wavelet-based [time series] analysis.
+						{Describe how to run toolbox modules, run-down of contents of toolbox folders. Introduce the Time-Frequency Analysis module as what will be used to run through the generic features of modules. Very brief summary of analysis structure: loading data (with some specification requirements of file format, length, size etc), choosing parameters, pre-processing, calculations, viewing 
+						and manipulating figure results, saving data and figures (introducing .fig format). Include Note if require user to use a particular delimiter (or offer option for user to specify which delimiter used). Tool-tip for "delimiter".}}
+						</p>
+						
+						<p>{{Information on data formats, orientation, size and sampling frequency. MATLAB also supports text (TXT), spreadsheet (XLS) and other formats. If toolbox only going to support MAT and CSV, will include recommendation for user to convert whatever format their data is in to one of these. 
+						Provide information (links) for user to convert their data into CSV or MAT form. Advantages/disadvantages (if any) of either format. Data types: floating point, int, string. Awareness of data orientation: row-wise or column-wise.}}</p>						
+						<p>The Wavelet Toolbox is currently equipped to operate with data files of type CSV (Comma-Separated Value) or MAT (MATLAB formatted). 
+						The data types compatible for import and saving in the Wavelet Toolbox are limited to those supported by MATLAB.</p> 						
+						<p>CSV files are very common for data exchange and can be created in applications such as a <a href="#" class="tooltip">text editor<span class="tool-tip-text">A text editor is a program used to edit plain text files. Those provided as standard with operating systems include Notepad for Windows and TextEdit for Mac.</span></a>, Microsoft Excel and Google Docs. 
+						</p>
+						<p>
+						MAT files are the native data format for MATLAB. {{Matrix formatted, saved in MATLAB workspace (variables). When import CSV, toolbox converts to MAT to operate on data.}} </p>
+						</p>			
+			
+				<a class="previous-button" href="basic-features.html">Previous</a>
+				<a class="next-button" href="basic-features-analysis-window.html">Next</a>
+			</div> 
+		</div>
+		<div class="footer"></div>
+	</body>
+	
+</html>

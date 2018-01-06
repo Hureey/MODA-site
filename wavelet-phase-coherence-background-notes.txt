@@ -1,0 +1,10 @@
+%%%%% Wavelet Phase Coherence | Background %%%%%
+
+If this phase difference is found to remain constant {over what length scale (?)}, this indicates {(?)} that the source of the oscillations at this frequency is shared [/common] 
+between the two time series. We call these two oscillations [frequency components of the two time series] <italic> phase coherent </italic>
+
+In this way, the phase coherent state can be defined as an [essentially] instantaneous event.
+
+The phase information of a time series is extracted at instances of time through the Windowed Fourier or Wavelet Transform.  
+To understand how we can gather [obtain/attain] the phase of oscillations across the whole frequency spectrum through time, read the sections on the <link>Windowed 
+Fourier Transform </link> and <link> Wavelet Transform </link>.

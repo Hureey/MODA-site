@@ -1,0 +1,9 @@
+			<ul class="breadcrumb">
+					<li><a href="coupling.html"></a></li>
+					<li>Dynamical Bayesian Inference</li>					
+				</ul>
+				<h1>Dynamical Bayesian Inference</h1>
+					<h2>Introduction</h2>
+			
+				<div class="section-separator"></div>
+				<a class="next-button" href="dynamical-bayesian-inference-background.html">Next</a>

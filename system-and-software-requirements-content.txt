@@ -1,0 +1,39 @@
+<ul class="breadcrumb">
+					<li><a href="getting-started.html">Getting Started</a></li>
+					<li><a href="system-and-software-requirements.html">Before You Begin: System and Software Requirements</a></li>
+				</ul>
+				<h1>Before You Begin</h1>
+					<h2>System and Software Requirements</h2>
+						<p>The Wavelet Toolbox is itself freely available for download, but it is written in the proprietary programming language and numerical computing environment <a href="https://uk.mathworks.com/products/matlab.html?s_tid=hp_products_matlab">MATLAB</a>, 
+						developed by MathWorks. To run the toolbox it is required that you install MATLAB version [version] or newer on your system. This necessitates that you, your affiliated institution or [company] purchase a <a href="https://uk.mathworks.com/pricing-licensing.html?prodcode=ML">MathWorks license</a>, or alternatively
+						<a href="">enrol on a 30-day free trial</a>. </p>
+						<p> {{Brief motivation for user to purchase MATLAB, giving some background to its functionality and added capabilities outside of Lancaster Wavelet Toolbox. Popular language for signal processing and data analysis in particular, and for introductory courses in programming: user-friendly, extensive library of built-in functions, high speed {?} hosts large range of its own toolboxes.}}
+						</p>
+				
+						<p>MathWorks offer a range of software packages over various price brackets depending on the desired functionality and intended level of distribution. These include optional add-ons covering many different areas of study, from computational biology to signal processing and communications 
+						(including MathWork's own Wavelet Toolbox - see our <a href="about.html#feature-breakdown-and-comparisons">comparison of features</a> to see why we were motivated to develop our own version).
+						For your information, we have provided a break-down of the options available for purchasing MATLAB [at various intended distribution levels]:
+						</p>				
+						<p>
+						{{Provide our own recommendation for a package with respect to using the Wavelet Toolbox, and for broader prospects? depending on user type?}
+						</p>
+						<p>
+						<span style="font-weight:bold">If you are a student</span> {provide recommendation for type of package and how to proceed for student interested in own use on personal computer, and/or through institution. Direct to relevant MathWorks links.} 
+						</p>
+						<p>
+						<span style="font-weight:bold">If you are an instructor </span> {provide recommendation}} 
+						</p>
+						<p>The minimum system requirements for the latest version of MATLAB (R2017a) are shown below {{include condensed version of table from link in table caption, so user can see the requirements at a glance and doesn't have to go to separate website to view them? Should explicitly provide minimum system requirements for the version needed to run the toolbox, or 2017a?}}:</p>
+						<!-- Table https://uk.mathworks.com/support/sysreq.html-->
+						<table>
+							<caption> <span style="font-weight:bold">Table 1</span>. Adapted from: <a href="https://uk.mathworks.com/support/sysreq.html">System Requirements for MATLAB R2017a</a></caption>
+						</table>
+						<p>
+						For information on the system requirements for previous releases of MATLAB, please visit their <a href="https://uk.mathworks.com/support/sysreq/previous_releases.html"> System Requirements & Platform Availability</a> page. 
+						</p>
+						<p>
+						{Guide to link for general MATLAB documentation for installation and activation. Include our own version of instructions?}
+						</p>	
+		
+			<div class="section-separator"></div>
+			<a class="next-button" href="installation.html">Next</a>

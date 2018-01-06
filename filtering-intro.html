@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>MODA Toolbox | Lancaster University</title>
+		<link href="styles/style.css" rel="stylesheet" type="text/css">
+		<link href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<script type="text/javascript" async 
+			src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML">
+		</script>		
+	</head>
+
+	<body>
+		
+		<div id="header">
+			<div id="topbar1"><a href="#">Back to Nonlinear & Biomedical</a></div>
+			<div id="logobar">
+				<div id="logobar-image">
+					<a href="http://www.lancaster.ac.uk/">
+						<img class="logo" src="images\LU-logo.png" alt="Lancaster University emblem: a coat of arms" >	
+					</a>
+				</div>
+				<div id="logobar-text">
+					<a href="http://www.lancaster.ac.uk/physics/" style="font-size: 1em; color:#a5a5a5">
+						Department of Physics
+					</a>
+					<br>
+					<a href="http://www.lancaster.ac.uk/physics/research/nonlinear-and-biomedical-physics/" style="font-size: 2em; color: #000; font-weight:bold">
+						Nonlinear and Biomedical Physics
+					</a>
+				</div>
+			</div>
+			<div id="navbar2">		
+				<ul id="nav2">
+					<li><a id="title" href="index.html">Multiscale Oscillatory Dynamics Analysis | MODA</a></li>
+					<li><a class="right" href="feedback.html">Feedback</a></li>				
+					<li><a class="right" href="download.html">Download</a></li>
+					<li><a class="right" href="about.html">About</a></li>
+					
+				</ul> 
+			</div>
+		</div>
+					
+		<div id="container">
+			<div class="sidebar-back"></div>
+			<div class="sidebar">
+			
+				<nav class="nav" role="navigation">
+					<ul class="navList">
+						<li><a href="what-is-moda.html">What is MODA?</a></li>
+						
+						<li>
+							<input type="checkbox" id="group-2" hidden>
+							<label for="group-2">Getting Started</label>
+							
+							<ul class="group-list">
+								<li><a href="before-you-begin-system-requirements.html">Before you begin</a></li>
+								<li><a href="basic-features-preliminaries.html">Basic features</a></li>								
+								<li><a href="performing-analysis-loading-and-analysing-data.html">Performing analysis</a></li>								
+							</ul>
+						</li>
+						
+						<li>
+							<input type="checkbox" id="group-3" hidden>
+							<label for="group-3">Time-Frequency Domain</label>
+							
+							<ul class="group-list">
+								<li><a href="windowed-fourier-transform-intro.html">Windowed Fourier transform</a>
+								<li><a href="wavelet-transform-intro.html">Wavelet transform</a></li>
+								<li><a href="filtering-intro.html">Filtering</a></li>
+							</ul>
+						</li>	
+							
+						<li>
+							<input type="checkbox" id="group-4" hidden>
+							<label for="group-4"></span>Coherence</label>
+							
+							<ul class="group-list">
+								<li><a href="wavelet-phase-coherence-intro.html">Wavelet Phase coherence</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<input type="checkbox" id="group-5" hidden>
+							<label for="group-5"></span>Coupling</label>
+							
+							<ul class="group-list">
+								<li><a href="wavelet-bispectrum-intro.html">Wavelet Bispectrum</a></li>
+								<li><a href="dynamical-bayesian-inference-intro.html">Dynamical Bayesian Inference</a></li>
+							</ul>
+						</li>
+						<li><a href="research.html">Research</a></li>
+						<li><a href="further-help.html">Further Help</a></li>
+					</ul>
+				</nav>	
+			</div>
+		<div class="content-surround">	
+			<div class="content"> 
+						<p class="upper-title">Time-Frequency Domain</p>
+					<h1>Filtering</h1>
+						<h2>Introduction</h2>
+							When you have a time-frequency representation (TFR) of a signal, such as the wavelet transform or windowed Fourier transform, you may wish to trace and reconstruct
+							the different oscillatory components of the signal. This may be necessary to separate the amplitude modulated [tooltip?] and frequency modulated components. There
+							are many possible approaches to identify the different components in noisy data, and one way is to start with a TFR. From the curve of a certain frequency component
+							in a TFR, it is possible to estimate characteristics such as instantaneous frequency, phase and amplitude - the question is how to trace this curve. In the TFR,
+							there may be multiple peaks at any one time, and it is hard to identify which peak belongs to which component. Some apparent peaks may just be noise. The Filtering
+							& Ridge Extraction app contains two methods for extracting and reconstructing oscillatory modes. 
+							<br><br>
+							Butterworth filtering uses a Butterworth bandpass filter to extract phase and amplitude information between two frequencies. The Butterworth filter has a flat frequency
+							response compared to other bandpass filters.
+							<br><br>
+							If a TFR is constructed well, the oscillatory components of a time series should appear as amplitude peaks, which together form a ridge. Ridge extraction
+							traces this ridge (it traces the oscillation by moving along the line of maximum amplitude) in a specified frequency range. The method used to trace the 
+							ridge will not be described here but for details see: D. Iatsenko, P. V. E. McClintock and A. Stefanovska, On the extraction of instantaneous frequencies
+							from ridges in time-frequency representations of signals.
+						
+						<h2>How to use</h2>				
+						<h2>Advanced Options</h2>
+			
+				<a class="previous-button" href="#">Previous</a>
+				<a class="next-button" href="#">Next</a>
+			</div> 
+		</div>
+		<div class="footer"></div>
+	</body>
+	
+</html>

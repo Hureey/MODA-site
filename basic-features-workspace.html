@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>MODA Toolbox | Lancaster University</title>
+		<link href="styles/style.css" rel="stylesheet" type="text/css">
+		<link href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<script type="text/javascript" async 
+			src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML">
+		</script>		
+	</head>
+
+	<body>
+		
+		<div id="header">
+			<div id="topbar1"><a href="#">Back to Nonlinear & Biomedical</a></div>
+			<div id="logobar">
+				<div id="logobar-image">
+					<a href="http://www.lancaster.ac.uk/">
+						<img class="logo" src="images\LU-logo.png" alt="Lancaster University emblem: a coat of arms" >	
+					</a>
+				</div>
+				<div id="logobar-text">
+					<a href="http://www.lancaster.ac.uk/physics/" style="font-size: 1em; color:#a5a5a5">
+						Department of Physics
+					</a>
+					<br>
+					<a href="http://www.lancaster.ac.uk/physics/research/nonlinear-and-biomedical-physics/" style="font-size: 2em; color: #000; font-weight:bold">
+						Nonlinear and Biomedical Physics
+					</a>
+				</div>
+			</div>
+			<div id="navbar2">		
+				<ul id="nav2">
+					<li><a id="title" href="index.html">Multiscale Oscillatory Dynamics Analysis | MODA</a></li>
+					<li><a class="right" href="feedback.html">Feedback</a></li>				
+					<li><a class="right" href="download.html">Download</a></li>
+					<li><a class="right" href="about.html">About</a></li>
+					
+				</ul> 
+			</div>
+		</div>
+					
+		<div id="container">
+			<div class="sidebar-back"></div>
+			<div class="sidebar">
+			
+				<nav class="nav" role="navigation">
+					<ul class="navList">
+						<li><a href="what-is-moda.html">What is MODA?</a></li>
+						
+						<li>
+							<input type="checkbox" id="group-2" hidden>
+							<label for="group-2">Getting Started</label>
+							
+							<ul class="group-list">
+								<li><a href="before-you-begin-system-requirements.html">Before you begin</a></li>
+								<li><a href="basic-features-preliminaries.html">Basic features</a></li>								
+								<li><a href="performing-analysis-loading-and-analysing-data.html">Performing analysis</a></li>								
+							</ul>
+						</li>
+						
+						<li>
+							<input type="checkbox" id="group-3" hidden>
+							<label for="group-3">Time-Frequency Domain</label>
+							
+							<ul class="group-list">
+								<li><a href="windowed-fourier-transform-intro.html">Windowed Fourier transform</a>
+								<li><a href="wavelet-transform-intro.html">Wavelet transform</a></li>
+								<li><a href="filtering-intro.html">Filtering</a></li>
+							</ul>
+						</li>	
+							
+						<li>
+							<input type="checkbox" id="group-4" hidden>
+							<label for="group-4"></span>Coherence</label>
+							
+							<ul class="group-list">
+								<li><a href="wavelet-phase-coherence-intro.html">Wavelet Phase coherence</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<input type="checkbox" id="group-5" hidden>
+							<label for="group-5"></span>Coupling</label>
+							
+							<ul class="group-list">
+								<li><a href="wavelet-bispectrum-intro.html">Wavelet Bispectrum</a></li>
+								<li><a href="dynamical-bayesian-inference-intro.html">Dynamical Bayesian Inference</a></li>
+							</ul>
+						</li>
+						<li><a href="research.html">Research</a></li>
+						<li><a href="further-help.html">Further Help</a></li>
+					</ul>
+				</nav>	
+			</div>
+		<div class="content-surround">	
+			<div class="content"> 
+				<ul class="breadcrumb">
+					<li><a href="getting-started.html">Getting Started</a></li>
+					<li><a href="basic-features.html">Basic Features</a></li>
+					<li>Workspace</li>
+				</ul>
+				<h1>Basic Features</h1>
+				
+				<h2>Workspace</h2>
+						<p>The analysis window contains an arrangement of panels that together constitute the workspace for that module. This collection of elements includes user interface controls such as buttons, and panels containing axes and dialog boxes. Each module offers unique functionality, and as such the content of the workspace varies depending on the analysis method.
+						However, most of the elements are generic to each of the [five] modules, and are shown highlighted in <a href="#analysiswindow2">Fig. 3</a>: </p>
+						
+						<figure style="padding-bottom:20px">
+							<img class="positionImage" id="analysiswindow2" src="images/analysiswindow2.png" alt="desc" style="padding-top: -20px;">
+							<figcaption><span style="font-weight:bold">Fig. 3</span>: Workspace of {Signal Analysis} module, with module generic panels [/panels generic to all modules] highlighted.  <span style="font-weight: bold">A</span> Imported Data; <span style="font-weight: bold">B</span> Graph Limits; <span style="font-weight: bold">C</span> Select Data {(exception: panel omission for Bispectrum module)}; <span style="font-weight: bold">D</span> Plots; <span style="font-weight: bold">E</span> Graph Options; <span style="font-weight: bold">F</span> Data Import; <span style="font-weight: bold">G</span> Advanced Options {(exception: panel omission for the Bayesian module)}; </figcaption>
+						</figure>
+						<dl>
+							<dt><span style="font-weight: bold">Imported Data</span></dt> 
+							<dd>The data that you load into the workspace is displayed graphically in the axes of the <span style="font-weight: bold">Imported Data</span> panel. If imported in the correct orientation, time in seconds is displayed on the horizontal axis (x-axis) as the independent variable, and the dependent variable, e.g. amplitude, is displayed on the vertical axis (y-axis).</dd>
+ 							<dt><span style="font-weight: bold">Graph Limits</span></dt> 
+							<dd>To precisely specify the signal time span for analysis and the amplitude displayed in the <span style="font-weight: bold">Imported Data</span> axes, the graph limits <span style="font-weight:bold">Xlim</span> for the x-axis and <span style="font-weight:bold">Ylim</span> for the y-axis can be respectively stated. 
+							The signal range of <span style="font-weight:bold">Xlim</span> should be specified in seconds, and the range for <span style="font-weight:bold">Ylim</span> in the associated unit of measurement. 
+							The default values of <span style="font-weight:bold">Xlim</span> displayed after data import are the time in seconds of the first and last recorded samples.
+							The default values of <span style="font-weight:bold">Ylim</span> displayed after data import are the global minimum and maximum of the signal amplitude plus an additional padding for optimum clarity.					 										
+							The range for each axis is controlled by entering the lower of the boundary values, followed by a comma and the higher boundary value, e.g. <span style="font-weight:bold">Xlim</span>:
+							<span class="input">3.15, 1200.00</span> and <span style="font-weight:bold">Ylim</span>: <span class="input">-35.1, 42.4</span>.							
+							<div class="note">						
+							<span style="font-weight:bold">Note:</span> A specification of the <span style="font-weight: bold">Ylim</span> values will not affect the signal amplitude range subject to module analysis functions [/analysis], and only serves to control the vertical range of the graph view.
+							</div>			
+							To update the display of the <span style="font-weight: bold">Imported Data</span> axes view, press the <span style="font-weight:bold">Refresh</span> button. 
+							In a corresponding manner, if the zoom or pan tools are used to modify the axes view range, the  <span style="font-weight:bold">Xlim</span> and  <span style="font-weight:bold">Ylim</span> numerical values may be updated accordingly by pressing the <span style="font-weight:bold">Refresh</span> button. 
+							<br><br>
+							An attempt to enter a data limit with greater precision than that with which it was measured will automatically be replaced with 
+							the rounded value at the precision of the measurement. 
+							<br><br>
+							The <span style="font-weight: bold">Length</span> dialog box (not editable) displays the number of sample points in the range specified by the  <span style="font-weight:bold">Xlim</span> input. 							
+							</dd>
+							<dt><span style="font-weight: bold">Select Data</span></dt> 
+							<dd>The time series loaded into the workspace are labelled automatically upon import. The signal number is assigned logically as the row number in the case of row-wise orientated data, and the column number in the case of column-wise orientated data.							
+							If you are exploring multiple time series, a given signal of the data set can be individually displayed and analysed by selecting it from the <span style="font-weight: bold">Select Data</span> list. {{Functionality in development - choice to analyse single signal vs. all, or a selection}} </dd>
+							<dt><span style="font-weight: bold">Plots</span></dt> 
+							<dd>The numerical results calculated by each module are represented graphically in the <span style="font-weight: bold">Plots</span> panel axes. {{Information on different plot types: coloured surface plots for 3D, line graphs}}. 
+							To display the results of a different signal, select it in the <span style="font-weight: bold">Select Data</span> list.</dd>
+							<dt><span style="font-weight: bold">Graph Options</span></dt> 
+							<dd>To emphasise a coordinate or interval on the y-axis (typically the Frequency (Hz) axis for most modules), a dashed line marker for a given y-coordinate may be plotted which spans the time range currently in the axes view.
+							To specify a y-coordinate to plot a line marker, enter the y-value in the <span style="font-weight: bold">Intervals</span> box and press <kbd>Enter</kbd>. You can raise multiple markers by inputting y-values in any order and separated with a single space, e.g. 
+							<span style="font-weight:bold">Intervals:</span> <span class="input">1.489 0.05 9.3</span>. To remove a plotted y-value marker, remove it from the input box and press <kbd>Enter</kbd>. 
+							<div class="note">						
+								<span style="font-weight:bold">Note:</span> If you zoom in or pan across the graph axes, then enter an interval to plot, the line marker will be drawn only over the range of time that is viewable in the expanded or translated axes view. To extend the line across the entire plot, reset the axes to the original view, then click inside the <span style="font-weight:bold">Intervals</span> dialog box and press enter again (without removing the desired Frequency (Hz) coordinate).
+							</div>
+							The <span style="font-weight:bold">Status</span> bar presents prompts for your next action, and displays progress updates of any calculations you initialise.
+							<dt><span style="font-weight: bold">Data Import</span></dt> 
+							<dd>The <span style="font-weight: bold">Data Length</span> dialog box (not editable) displays the total length of the imported time series in seconds. </dd>
+							<dt><span style="font-weight: bold">Calculate Button</span></dt>
+							<dd>{The functionalities offered by each module include calculations initialised by pressing the <span style="font-weight:bold">Calculate ---</span> button, where <span style="font-weight:bold">---</span> is replaced by the corresponding [measure].}  </dd>							
+							<dt><span style="font-weight: bold">Advanced Options</span></dt> 
+							<dd>The parameter selection presented in the workspace is extended by various advanced options, the nature of which depend on the module. As you learn more about the analysis techniques offered by the Wavelet Toolbox, subtleties in their functioning and the role of parameters involved in the modules will become clearer. 
+							The choice of functions, parameter types and values offered in the <span style="font-weight: bold">Advanced Options</span> panel extend the possibilities of data types you can explore, and the dynamical properties open for investigation. 
+							</dd>
+						</dl>
+				<div class="section-separator"></div>
+				<a class="previous-button" href="basic-features-analysis-window.html">Previous</a>
+			</div> 
+		</div>
+		<div class="footer"></div>
+	</body>
+	
+</html>

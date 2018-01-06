@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>MODA Toolbox | Lancaster University</title>
+		<link href="styles/style.css" rel="stylesheet" type="text/css">
+		<link href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<script type="text/javascript" async 
+			src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+		</script>		
+	</head>
+
+	<body>
+		
+		<div id="header">
+			<div id="topbar1"><a href="#">Back to Nonlinear & Biomedical</a></div>
+			<div id="logobar">
+				<div id="logobar-image">
+					<a href="http://www.lancaster.ac.uk/">
+						<img class="logo" src="images\LU-logo.png" alt="Lancaster University emblem: a coat of arms" >	
+					</a>
+				</div>
+				<div id="logobar-text">
+					<a href="http://www.lancaster.ac.uk/physics/" style="font-size: 1em; color:#a5a5a5">
+						Department of Physics
+					</a>
+					<br>
+					<a href="http://www.lancaster.ac.uk/physics/research/nonlinear-and-biomedical-physics/" style="font-size: 2em; color: #000; font-weight:bold">
+						Nonlinear and Biomedical Physics
+					</a>
+				</div>
+			</div>
+			<div id="navbar2">		
+				<ul id="nav2">
+					<li><a id="title" href="index.html">Multiscale Oscillatory Dynamics Analysis | MODA</a></li>
+					<li><a class="right" href="feedback.html">Feedback</a></li>				
+					<li><a class="right" href="download.html">Download</a></li>
+					<li><a class="right" href="about.html">About</a></li>
+					
+				</ul> 
+			</div>
+		</div>
+					
+		<div id="container">
+			<div class="sidebar-back"></div>
+			<div class="sidebar">
+			
+				<nav class="nav" role="navigation">
+					<ul class="navList">
+						<li><a href="what-is-moda.html">What is MODA?</a></li>
+						
+						<li>
+							<input type="checkbox" id="group-2" hidden>
+							<label for="group-2">Getting Started</label>
+							
+							<ul class="group-list">
+								<li><a href="system-and-software-requirements.html">Before you begin</a></li>
+								<li><a href="basic-features.html">Basic features</a></li>								
+								<li><a href="performing-analysis.html">Performing analysis</a></li>								
+							</ul>
+						</li>
+						
+						<li>
+							<input type="checkbox" id="group-3" hidden>
+							<label for="group-3">Time-Frequency Domain</label>
+							
+							<ul class="group-list">
+								<li><a href="windowed-fourier-transform.html">Windowed Fourier transform</a>
+								<li><a href="wavelet-transform.html">Wavelet transform</a></li>
+								<li><a href="filtering.html">Filtering</a></li>
+							</ul>
+						</li>	
+							
+						<li>
+							<input type="checkbox" id="group-4" hidden>
+							<label for="group-4"></span>Coherence</label>
+							
+							<ul class="group-list">
+								<li><a href="wavelet-phase-coherence.html">Wavelet Phase coherence</a></li>
+							</ul>
+						</li>
+						
+						<li>
+							<input type="checkbox" id="group-5" hidden>
+							<label for="group-5"></span>Coupling</label>
+							
+							<ul class="group-list">
+								<li><a href="wavelet-bispectrum.html">Wavelet Bispectrum</a></li>
+								<li><a href="dynamical-bayesian-inference.html">Dynamical Bayesian Inference</a></li>
+							</ul>
+						</li>
+						<li><a href="research.html">Research</a></li>
+						<li><a href="further-help.html">Further Help</a></li>
+					</ul>
+				</nav>	
+			</div>
+		<div class="content-surround">	
+			<div class="content"> 
+				<ul class="breadcrumb">
+					<li><a href="coupling.html">Coupling</a></li>
+					<li>Wavelet Bispectrum</li>
+				</ul>
+					<h1>Wavelet Bispectrum</h1>
+						<h2>Introduction</h2>
+							The bispectrum is a higher order statistic, which is analogous to the skewness of a data series (mean is first order, variance is second order, skewness third
+							order). In the case we look at here, the frequency domain spectrum of a time series is the second order statistic, and the bispectrum (in the 
+							frequency-frequency domain) is the third order statistic. Calculating the bispectrum can tell us if there is quadratic coupling (nonlinear interaction)
+							between two oscillations in a time-series, and the cross-bispectrum can be used to tell us if there is coupling between any of the oscillations in two 
+							different time series.
+							<br><br>
+							\[B^{W} = \int\limits_{L}W_{T}(s_{1},t)W_{T}(s_{2},t)W_{T}^{*}(s_{3},t)\,dt\]
+							<br><br>
+							It is important to recall that the scale s1 is 1/f1 and s2 is 1/f2. The wavelet bispectrum is plotted in the frequency-frequency plane, rather than in the 
+							scale plane, so it can be easily interpreted. WT* is the conjugate of the wavelet transform of the signal. S3 = 1/(1/s1 + 1/s2)=1/f3 [Include picture of
+							example] [The wavelet transform looks like this – include picture of example from our example toolbox data] In addition to this, the instantaneous wavelet
+							bispectrum tells us the instantaneous biamplitude: [eq] and the instantaneous biphase: [eq].
+							<br><br>
+							The biamplitude is dependent on the amplitude of the oscillations in the wavelet transform. This dependency can be removed by normalisation: [eq]
+							This is takes values between 0 and 1 and is known as the bicoherence. The bispectrum/bicoherence will still be non-zero for Gaussian white noise. It is possible to detect couplings even at the lowest frequencies due to the logarithmic frequency scale of the wavelet transform. The bispectrum does have a few limitations. One is that the bispectrum is no longer meaningful when f1 and f2 approach the Nyquist frequency fs/2. This is because f3 begins to take biphase and biamplitude information at frequencies which are not in the observable range. (F3 = f1+f2) This means that couplings at the highest frequencies of the range cannot be detected and there is an effective Nyquist frequency at the line that goes from (fs/2,0) to (0,fs/2). [picture showing this] Another is that one of the frequencies is very large, f3 \approx fhigh. This means that when there are large differences between the frequencies, couplings cannot be detected. (You can choose the tolerance for these parts using the order parameter)
+							
+							<h3>Cross-bispectrum</h3>
+								It is possible to detect coupling between oscillations from two different signals in the same way. This time there are different combinations. The cross bispectrum contains different combinations of the wavelet transforms of time series 1 and 2 and the conjugate wavelet transform of time series 1 and 2. [eqs]. Information about the coupling direction can be determined by comparing the different cross bispectra.  
+								
+						
+						<h2>How to use</h2>
+						[show example toolbox data picture with the bispectrum, biamplitude, biphase and one point marked on] 
+						<h2>Intepretation</h2>
+						If there is a peak in the biamplitude at some f1 and f2, then it is likely that there is a coupling between the oscillations at f1 and f2 in this time series. It is possible to have peaks due to noise and not due to coupling. To determine whether it is really a coupling, look at the instantaneous biphase for s1 and s2, if the biphase is relatively constant then there is a coupling, if the peak was just due to noise, then the biphase will not be constant
+				
+				<div class="section-separator"></div>
+				<a class="next-button" href="wavelet-bispectrum-background.html">Next</a>
+			</div> 
+		</div>
+		<div class="footer"></div>
+	</body>
+	
+</html>

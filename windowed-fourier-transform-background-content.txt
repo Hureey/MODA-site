@@ -1,0 +1,48 @@
+<ul class="breadcrumb">
+					<li><a href="time-frequency-domain.html">Time-Frequency Domain</a></li>
+					<li><a href="windowed-fourier-transform-intro.html">Windowed Fourier Transform</a></li>
+					<li>[Background]</li>
+				</ul>
+				<h1>Windowed Fourier Transform</h1>
+					<h2>[Background]</h2>
+					{{A comprehensive guide to the WFT, including some history of development, core principles, functioning, and lead on with areas of application. Aim to build a working knowledge and understanding of the WFT, and its motivation. 
+					All subsections to be sorted. Content addition, edit and organisation.}}
+					<br><br>
+					Any function of time can be represented as the sum of many sinusoids, of different frequencies and amplitudes. The normal Fourier transform takes a function of time and
+					transforms to get a function of frequency, which lets you see how much of a certain frequency is present in the function. This works well even for signals containing large
+					numbers of constituent frequencies. 
+					<br><br>
+					However, the normal Fourier transform cannot analyse time-varying oscillations very well. If a function is made up of a certain set of frequencies 
+					that are present at all times, the normal Fourier transform works fine, but for a time-varying oscillation, the frequencies that are present vary throughout time. It is not possible to 
+					detect the time variance of the frequencies using the Fourier Transform, as it does not simultaneously provide time and frequency information.
+					<br><br>
+					The windowed Fourier transform was developed to solve this problem. Instead of calculating the Fourier Transform over all time, small time windows are used. For this small window the time 
+					series can be considered to be stationary, so a Fourier spectrum is calculated for each window, and the spectrum is assigned to the central point of that window. A sliding window is used to 
+					do this over the whole time series, which builds up a 3D picture of time, frequency, and Fourier transform magnitude. It is calculated by using a rectangular window function: 
+					<br><br>
+					[add equation and explain it + picture (see Manual Content.docx)]
+					<br><br>
+					A shortcoming is that data at the edge of each window contributes to the Fourier transform as much as the data at the centre. It would be better if the data at the centre of the window had more 
+					weight in the Fourier transform.  A solution to this is to use a Gaussian window, which is the default window type in the Time Frequency Analysis app. Many window types can be used for different applications 
+					and types of data. In the Toolbox, the window types available are Gaussian, Hann, Blackman, Exponential, Rectangular and Kaiser-a.  
+					<br><br>
+					[explain all the window types in an appendix and link here, or in advanced options?]
+					<br><br>
+					A major drawback of the windowed Fourier transform is that the resolution is fixed and depends on the window size selected. To get good time resolution, a small time window must be used, but this gives poor frequency resolution. 
+					To get a good frequency resolution, a large time window must be used, but gives poor time resolution. At high frequencies, the time window does not need to be very wide to give good frequency resolution. At low frequencies, the 
+					time window must be made wider than this to give good frequency resolution, but this will decrease the time resolution. The optimum window size is different for different frequencies, but the windowed Fourier transform uses a fixed window size.
+					<br><br>
+					A solution to this needs to take the frequency into account when deciding the window size. One such solution is the wavelet transform which you can read about here [to wavelet transform page].
+						<h3>Fourier Transform</h3>
+						<h3>What frequencies can be detected  in a signal?</h3>
+						{{Section on Nyquist frequency - sampling theorem.}}
+						<br><br>
+						When sampling data, it is important to take note of the minimum sampling frequency at which the samples will still completely determine the function. The 
+						Nyquist-Shannon sampling theorem states: If a function x(t) contains no frequencies higher than B hertz, it is completely determined by giving its ordinates 
+						at a series of points spaced 1/(2B) seconds apart. In the Time Frequency Analysis app, any information about frequencies above half the sampling frequency 
+						is not meaningful (artefactual). The default maximum frequency is therefore set at half the sampling frequency.
+					<br>
+					<h3>[Resolving in Time: Windowing]</h3>
+					<div class="section-separator"></div>
+					<a class="previous-button" href="windowed-fourier-transform-intro.html">Previous</a>
+					<a class="next-button" href="windowed-fourier-transform-how-to.html">Next</a>

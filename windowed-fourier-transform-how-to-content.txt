@@ -1,0 +1,10 @@
+	<ul class="breadcrumb">
+					<li><a href="time-frequency-domain.html">Time-Frequency Domain</a></li>
+					<li><a href="windowed-fourier-transform-intro.html">Windowed Fourier Transform</a></li>
+					<li>MODA Walkthrough</li>
+				</ul>			
+				<h1>Windowed Fourier Transform</h1>	
+					<h2>[MODA Walkthrough]</h2>
+				<div class="section-separator"></div>	
+				<a class="previous-button" href="windowed-fourier-transform-background.html">Previous</a>
+				<a class="next-button" href="windowed-fourier-transform-advanced-options.html">Next</a>

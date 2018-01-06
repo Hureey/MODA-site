@@ -1,0 +1,7 @@
+					<h1>Welcome to the Multiscale Oscillatory Dynamics Analysis (MODA) Toolbox</h1>
+					<br>
+					<p>
+					{{Brief, broad, non-technical introduction to the MODA Toolbox - its contents, structure, functions and motivation for development. Emphasising range of applicability of 
+					the analysis techniques to different fields of study (providing some examples), and the interactive, user-friendly nature of the toolbox (with brief mention of what distinguishes the Lancaster toolbox from others currently available.
+					Guide user on how to navigate the site: indicating toolbox modules grouped in the side navigation according to the type of dynamical features used to investigate.}}
+					</p>
